@@ -42,7 +42,7 @@ or for Python 3::
 
 Supporting JPEG images would require additional library (`Pillow <http://python-pillow.org/>`_). This program tries to
 be as small as possible so only formats which are provided by Tkinter toolkit are currently supported. Future versions
-of program might support additinal image formats as optional requirement.
+of program might support additional image formats as optional requirement.
 
 Usage
 =====
