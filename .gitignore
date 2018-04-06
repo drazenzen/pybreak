@@ -9,3 +9,6 @@ __pycache__/
 # Distribution / packaging
 env/
 build/
+
+# Config
+pybreak.json

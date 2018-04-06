@@ -195,6 +195,7 @@ class MainFrame(ttk.Frame):
         # Controls
         frm_btns = ttk.Frame(self)
         self.btn_run = ttk.Button(frm_btns, textvariable=self.text_running)
+        self.btn_run.focus_set()
         self.btn_run.pack(side=LEFT, expand=True, fill=X)
         self.btn_run.bind("<1>", self.on_run)
         ttk.Button(frm_btns, text="Preview", command=self.on_preview).pack(
@@ -239,6 +240,7 @@ class MainFrame(ttk.Frame):
         if self.running:
             self.text_running.set("Stop")
             self.text_status.set("Running...")
+            self.winfo_toplevel().iconify()
             self.run()
         else:
             self.stop()
